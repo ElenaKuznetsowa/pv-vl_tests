@@ -11,7 +11,7 @@ class CorporateCest
 		$items = array (
 			"Салаты и холодные закуски",
 			"Первые блюда",
-			"Вторые блюда",
+			//"Вторые блюда", //Нет в задании
 			"Постные блюда",
 			"Мучные блюда",
 			"Комплексные обеды",
@@ -24,28 +24,30 @@ class CorporateCest
 		/*
 		foreach($items as $item)
 		{
-			$I->see($item, 'table.light_brown_grad_menu_vertical');
+			$I->see($item, 'table.light_brown_grad_menu_vertical'); 
 		}
 		*/
 		
 		//Вариант 2
 		// Поиск по XPath в каждой второй колонке таблицы
 		//Недостаток - чувствительность к изменению структур страницы в целом и таблицы меню
+		//Не пройдет с указанными в задании пунктами
 		/*
 		//Счетчик пунктов тестового списка ($items)
 		$i = 1;	
 		foreach($items as $item)
 		{
+			//ищем 3-ю таблицу на странице
 			$I->see($item, '//table[3]/tbody/tr/td[' . $i * 2 . ']/a');
-			//или ищем таблицу по классу $I->see($item, '//table[@class="light_brown_grad_menu_vertical"]/tbody/tr/td[' . $i * 2 . ']/a');
+			//или ищем таблицу по классу
+			// $I->see($item, '//table[@class="light_brown_grad_menu_vertical"]/tbody/tr/td[' . $i * 2 . ']/a');
 			$i = $i + 1;
 		}
 		*/
-		$i = 1;	
+		//Поиск элементов из списка без учета порядка
 		foreach($items as $item)
 		{
-			$I->see($item, '//table[@class="light_brown_grad_menu_vertical"]/tbody/tr/td[' . $i * 2 . ']/a');
-			$i = $i + 1;
+			$I->see($item, '//table[@class="light_brown_grad_menu_vertical"]//td/a');
 		}
 	}
 }

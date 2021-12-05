@@ -2,8 +2,8 @@
 Acceptance tests - test task
 Требования к установленному ПО:
 
-*Web-сервер - любой поддерживающий PHP
-*PHP 7.1 https://www.php.net/downloads
+* Web-сервер - любой поддерживающий PHP
+* PHP 7.1 https://www.php.net/downloads
 --Использовалась сборка для разработчиков EasyPHP-Devserver-17
 
 * Java runtime 17 https://www.java.com/ru/download/

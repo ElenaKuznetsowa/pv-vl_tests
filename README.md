@@ -1,6 +1,6 @@
 # pv-vl_tests
 Acceptance tests - test task
-Требования к установленному ПО:
+##Требования к установленному ПО##
 
 * Web-сервер - любой поддерживающий PHP
 * PHP 7.1 https://www.php.net/downloads
@@ -12,7 +12,7 @@ Acceptance tests - test task
 * ChromeDriver 96 https://chromedriver.chromium.org/downloads
 * Codeption 4.1.22 https://codeception.com/install
 
-Запуск тестов:
+##Запуск тестов##
 1. Клонировать репозиторий в директорию PHP
 2. В командной строке перейти в директорию PHP
 3. Выполнить команду 

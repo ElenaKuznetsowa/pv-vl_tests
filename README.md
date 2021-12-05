@@ -15,6 +15,5 @@ Acceptance tests - test task
 ## Запуск тестов
 1. Клонировать репозиторий в директорию PHP
 2. В командной строке перейти в директорию PHP
-3. Выполнить команду 
-     php vendor/bin/codecept run
+3. Выполнить команду `php vendor/bin/codecept run`
 
